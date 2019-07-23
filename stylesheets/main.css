@@ -1,0 +1,259 @@
+/*
+COLORS
+
+Primary: #eb2f64
+Primary light: #FF3366
+Primary dark: #BA265D
+
+Grey light 1: #faf9f9
+Grey light 2: #f4f2f2
+Grey light 3: #f0eeee
+Grey light 4: #ccc
+
+Grey dark 1: #333
+Grey dark 2: #777
+Grey dark 3: #999
+
+*/
+/* line 19, ../sass/_base.scss */
+:root {
+  --color-primary: #eb2f64;
+  --color-primary-light: #FF3366;
+  --color-primary-dark: #BA265D;
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  --line: 1px solid var(--color-grey-light-2);
+}
+
+/* line 41, ../sass/_base.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 46, ../sass/_base.scss */
+*,
+*::before
+*::after {
+  box-sizing: inherit;
+}
+
+/* line 52, ../sass/_base.scss */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/* line 57, ../sass/_base.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* line 1, ../sass/_layout.scss */
+.landing-page {
+  width: fit-content;
+  height: fit-content;
+  min-width: 100vw !important;
+  min-height: 100vh !important;
+  max-width: 100vw !important;
+  max-height: 100vh !important;
+  padding: 0 !important;
+  overflow-x: hidden;
+}
+
+/* line 12, ../sass/_layout.scss */
+.home {
+  height: 92vh;
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-image: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.93)), url(/img/HU-en-20190715-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+}
+/* line 19, ../sass/_layout.scss */
+.home .logo__div {
+  width: 100%;
+  padding: 0 !important;
+  margin: 3rem 0 !important;
+}
+/* line 25, ../sass/_layout.scss */
+.home .welcome {
+  margin-top: 10rem;
+}
+
+/* line 31, ../sass/_layout.scss */
+.navigation {
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: #141414 !important;
+  height: fit-content;
+  justify-content: center;
+}
+
+/* line 40, ../sass/_layout.scss */
+.content {
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: black !important;
+  height: 50vh;
+  justify-content: center;
+}
+
+/* line 49, ../sass/_layout.scss */
+.footer {
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: black !important;
+  height: fit-content;
+}
+
+/* line 1, ../sass/_components.scss */
+.svg-icon-netflix-logo {
+  height: 45px;
+  width: 167px;
+  fill: red;
+  display: inline-block;
+}
+
+/* line 8, ../sass/_components.scss */
+.btn-sign,
+.btn-join {
+  background-color: #e50914 !important;
+  color: white !important;
+  padding: 7px 17px !important;
+  width: 10rem;
+  font-size: 16px !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+/* line 19, ../sass/_components.scss */
+.btn-join {
+  margin-top: 5rem;
+  justify-self: center;
+  height: 10rem;
+  font-size: 3rem !important;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center !important;
+}
+
+/* line 28, ../sass/_components.scss */
+.btn-join-second {
+  font-size: 2rem !important;
+  height: 5rem;
+  text-align: center;
+  margin-left: 20px;
+}
+
+/* line 35, ../sass/_components.scss */
+.welcome__header1 {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+/* line 44, ../sass/_components.scss */
+.welcome__header2 {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+/* line 54, ../sass/_components.scss */
+.mat-icon {
+  font-size: 4rem;
+  margin-bottom: 5px;
+}
+
+/* line 59, ../sass/_components.scss */
+.menu {
+  padding-top: 2rem;
+  text-align: center;
+  color: gray;
+  min-height: 3rem;
+  cursor: pointer;
+}
+/* line 66, ../sass/_components.scss */
+.menu-active {
+  border-bottom: 4px solid red;
+}
+/* line 69, ../sass/_components.scss */
+.menu-active > * {
+  color: white !important;
+  fill: white !important;
+}
+/* line 75, ../sass/_components.scss */
+.menu:hover > * {
+  color: white !important;
+  fill: white;
+}
+
+/* line 82, ../sass/_components.scss */
+.svg-icon {
+  height: 75px;
+  color: gray;
+  fill: gray;
+}
+
+/* line 90, ../sass/_components.scss */
+.join-content {
+  margin-top: 10rem;
+}
+
+/* line 95, ../sass/_components.scss */
+.content-text {
+  color: white;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+/* line 102, ../sass/_components.scss */
+.image-cancel {
+  height: 30vh;
+}
+
+/* line 106, ../sass/_components.scss */
+.section-footer {
+  justify-content: center;
+}
+
+/* line 110, ../sass/_components.scss */
+.footer-content {
+  align-items: center;
+}
+
+/* line 115, ../sass/_components.scss */
+.footer-option {
+  display: inline;
+  text-decoration: none;
+  color: gray !important;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* line 124, ../sass/_components.scss */
+.margin-small {
+  margin-top: 2rem;
+}
